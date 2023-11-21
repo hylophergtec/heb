@@ -15,6 +15,15 @@ view: customer_address_ods {
     type: string
     sql: CAST(${TABLE}.CAODS_Customer_Detail_ID AS string);;
   }
+  dimension: customer_detail_id_link {
+    label: "Customer ID"
+    type: string
+    sql: ${caods_customer_detail_id} ;;
+    link: {
+      label: "Vista 360 cliente unico"
+      url: "https://hebmx.cloud.looker.com/dashboards/3?Customer%20detail%20ID=&Fecha%20Proceso%20Year=&Order%20ID="
+    }
+  }
   dimension: caods_external_number_nbr {
     type: string
     sql: ${TABLE}.CAODS_External_Number_NBR ;;
