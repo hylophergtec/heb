@@ -116,7 +116,7 @@ dimension:looker_image{
   label: "Icon"
   type: string
     sql:${cods_gender} ;;
-    html:<img src="https://storage.cloud.google.com/imagenes-looker/icon.png?authuser=2" /> ;;
+    html:<img src="https://storage.googleapis.com/df-exp-public-resources/vector-person.jpg" /> ;;
   }
   dimension: cods_is_active_sw {
     type: string
